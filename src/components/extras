@@ -1,0 +1,45 @@
+       if (typeof params.datax.slot !== '') {
+                const columns = [{
+                    title: 'In Date',
+                    dataIndex: 'in_date',
+                    key: 'name',
+                }, {
+                    title: 'In Time',
+                    dataIndex: 'in_time',
+                    key: 'age',
+                }, {
+                    title: 'Token',
+                    dataIndex: 'token',
+                    key: 'token',
+                }, {
+                    title: 'Number',
+                    dataIndex: 'Vnum',
+                    key: 'Vnum',
+                }, {
+                    title: 'Type',
+                    dataIndex: 'Vtype',
+                    key: 'Vtype',
+                }, {
+                    title: 'Slot',
+                    dataIndex: 'slot',
+                    key: 'slot',
+                }
+
+
+                ];
+                let trp = <Table dataSource={params.datax} columns={columns} />
+                this.setState({
+                    filtr: trp
+                })
+                this.showModal()
+            }
+
+               abc() {
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < this.state.dats.length; j++) {
+                if (arr[i].chk === this.state.dats[j].slot) {
+                    console.log('matched');
+                }
+            }
+        }
+    }
